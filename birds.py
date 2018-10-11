@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from scipy.spatial.distance import squareform, pdist, cdist
 from numpy.linalg import norm
+from pprint import pprint
 
 '''
 hmm haha not so interested in this birddddd now, so I just copy code,
@@ -43,6 +44,7 @@ class Birds():
                       vec.reshape(2*self.n)[1::2])
 
     def limitVec(self, vec, maxVel):
+
         mag = norm(vec)
         if mag > maxVel:
             vec[0], vec[1] = vec[0]*maxVel/mag, vec[1]*maxVel/mag
@@ -78,6 +80,7 @@ class Birds():
 
         # apply rule #1 - Cohesion
         vel3 = D.dot(self.pos) - self.pos
+        
         self.limit(vel3, self.maxRuleVel)
         vel += vel3
 
