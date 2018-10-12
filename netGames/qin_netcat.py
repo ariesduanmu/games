@@ -9,13 +9,14 @@ import re
 
 def run_command(command):
     command = command.rstrip()
+    print(f"Command: {command}")
     try:
         output = subprocess.check_output(command, stderr=subprocess.STDOUT, shell=True)
     except:
-        output = "Failed to execute command.\n"
+        output = b"Failed to execute command.\n"
     return output
 
-def client_handler(client_socket, upload_destination, execute):
+def client_handler(client_socket, upload_destination, execute, command):
     if upload_destination is not None:
         file_buf = ""
         while True:
@@ -29,32 +30,35 @@ def client_handler(client_socket, upload_destination, execute):
             with open(upload_destination, "wb") as f:
                 f.write(file_buf)
 
-            client_socket.send(f"Successfully saved file to {upload_destination}")
+            client_socket.send(b"Successfully saved file to " + upload_destination.encode("utf-8"))
         except Exception as e:
-            client_socket.send(f"[-] Failed to save file to {upload_destination}")
+            client_socket.send(b"[-] Failed to save file to " + upload_destination.encode("utf-8"))
 
-    if len(execute):
+    if execute is not None and len(execute)>0:
         output = run_command(execute)
-        client_socket.send(output)
+        client_socket.send(output.encode("utf-8"))
     if command:
+        client_socket.send(b"<BHP:#> ")
         while True:
-            client_socket.send("<BHP:#> ")
-            cmd_buf = ""
-            while "\n" not in cmd_buf:
+            cmd_buf = b""
+            while b"\n" not in cmd_buf:
                 cmd_buf += client_socket.recv(1024)
-
-            response = run_command(cmd_buf)
-            client_socket.send(response)
+            response = run_command(cmd_buf.decode("utf-8"))
+            client_socket.send(response+b"\n<BHP:#> ")
 
 def server_loop(host, port, command, upload_destination, execute):
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server.bind((host, port))
-    server.listen(5)
+    try:
+        server.bind((host, port))
+        server.listen(5)
 
-    while True:
-        client_socket, addr = server.accept()
-        client_thread = threading.Thread(target=client_handler, args=(client_socket,upload_destination,execute))
-        client_thread.start()
+        while True:
+            client_socket, addr = server.accept()
+            client_thread = threading.Thread(target=client_handler, args=(client_socket,upload_destination,execute,command))
+            client_thread.start()
+    except Exception as e:
+        print(f"[-] Error: {e}")
+        server.close()
 
 def client_sender(host, port):
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -62,19 +66,19 @@ def client_sender(host, port):
         client.connect((host, port))
         while True:
             recv_len = 1
-            response = ""
+            response = b""
             while recv_len:
                 data = client.recv(4096)
                 recv_len = len(data)
                 response += data
                 if recv_len < 4096:
                     break
-            print(response)
+            print(response.decode("utf-8"))
 
-            buf = input("")
+            buf = input("Input: ")
             buf += "\n"
 
-            client.send(buf)
+            client.send(buf.encode("utf-8"))
     except Exception as e:
         print(f"[-] Exiting...exception: {e}")
         client.close()
