@@ -95,19 +95,19 @@ def parse_arguments():
 
     args = parser.parse_args()
 
-    ip_pattern = "((?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(?:(?<!\.)|\.)){4}"
-    ip = re.match(ip_pattern, args.target_host)
-    valid_ip = (ip and ip.group(0) == args.target_host)
+    # ip_pattern = "((?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(?:(?<!\.)|\.)){4}"
+    # ip = re.match(ip_pattern, args.target_host)
+    # valid_ip = (ip and ip.group(0) == args.target_host)
 
-    if not (args.target_host == "localhost" or valid_ip):
-        print("[-] target_host is not valid. Exit...")
-        sys.exit(1)
+    # if not (args.target_host == "localhost" or valid_ip):
+    #     print("[-] target_host is not valid. Exit...")
+    #     sys.exit(1)
 
     if args.upload_destination is not None and not os.path.exists(args.upload_destination):
         print("[-] upload_destination file not exist. Exit...")
         sys.exit(1)
 
-    if not (1000 < args.port <= 65535):
+    if not (0 < args.port <= 65535):
         print("[-] Invalid port number. Exiting")
         sys.exit(1)
 
