@@ -6,7 +6,6 @@ import socket
 import argparse
 import threading
 
-
 def receive_from(connection):
     buf = b""
     # connection.settimeout(2)
