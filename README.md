@@ -2,105 +2,105 @@
 
 ## [Basic Computer Games](http://www.vintage-basic.net/games.html)
 
-- [] Acey Ducey
-- [] Amazing	
-- [] Animal	
-- [] Awari	
-- [] Bagels	
-- [] Banner	
-- [] Basketball	
-- [] Batnum	
-- [] Battle	
-- [] Blackjack	
-- [] Bombardment	
-- [] Bombs Away
-- [] Bounce	
-- [] Bowling	
-- [] Boxing	
-- [] Bug		
-- [] Bullfight	
-- [] Bullseye	
-- [] Bunny	
-- [] Buzzword	
-- [] Calendar	
-- [] Change	
-- [] Checkers	
-- [] Chemist	
-- [] Chief	
-- [] Chomp	
-- [] Civil War
-- [] Combat	
-- [] Craps	
-- [] Cube	
-- [] Depth Charge
-- [] Diamond	
-- [] Dice	
-- [] Digits	
-- [] Even Wins
-- [] Game of Even Wins
-- [] Flip Flop	
-- [] Ftball	
-- [] Football	
-- [] Fur Trader	
-- [] Golf	
-- [] Gomoko	
-- [] Guess	
-- [] Gunner	
-- [] Hammurabi	
-- [] Hangman	
-- [] Hello	
-- [] Hexapawn	
-- [] Hi-Lo	
-- [] High I-Q	
-- [] Hockey	
-- [] Horserace	
-- [] Hurkle	
-- [] Kinema	
-- [] King	
-- [] Letter	
-- [] Life	
-- [] Life For Two
-- [] Literature Quiz
-- [] Love	
-- [] Lunar	
-- [] LEM	
-- [] Rocket	
-- [] Master Mind	
-- [] Math Dice	
-- [] Mugwump	
-- [] Name	
-- [] Nicomachus	
-- [] Nim	
-- [] Number	
-- [] One Check	
-- [] Orbit	
-- [] Pizza	
-- [] Poetry	
-- [] Poker	
-- [] Queen	
-- [] Reverse	
-- [] Rock, Scissors, Paper
-- [] Roulette
-- [] Russian Roulette
-- [] Salvo	
-- [] Sine Wave	
-- [] Slalom	
-- [] Slots	
-- [] Splat	
-- [] Stars	
-- [] Stock Market
-- [] Super Star Trek
-- [] Super Star Trek: Instrctions
-- [] Synonym	
-- [] Target	
-- [] 3-D Plot	
-- [] 3-D Tic-Tac-Toe
-- [] Tic-Tac-Toe 1
-- [] Tic-Tac-Toe 2
-- [] Tower	
-- [] Train	
-- [] Trap	
-- [] 23 Matches	
-- [] War	
-- [] Weekday	
-- [] Word
+- [ ] Acey Ducey
+- [ ] Amazing	
+- [ ] Animal	
+- [ ] Awari	
+- [ ] Bagels	
+- [ ] Banner	
+- [ ] Basketball	
+- [ ] Batnum	
+- [ ] Battle	
+- [ ] Blackjack	
+- [ ] Bombardment	
+- [ ] Bombs Away
+- [ ] Bounce	
+- [ ] Bowling	
+- [ ] Boxing	
+- [ ] Bug		
+- [ ] Bullfight	
+- [ ] Bullseye	
+- [ ] Bunny	
+- [ ] Buzzword	
+- [ ] Calendar	
+- [ ] Change	
+- [ ] Checkers	
+- [ ] Chemist	
+- [ ] Chief	
+- [ ] Chomp	
+- [ ] Civil War
+- [ ] Combat	
+- [ ] Craps	
+- [ ] Cube	
+- [ ] Depth Charge
+- [ ] Diamond	
+- [ ] Dice	
+- [ ] Digits	
+- [ ] Even Wins
+- [ ] Game of Even Wins
+- [ ] Flip Flop	
+- [ ] Ftball	
+- [ ] Football	
+- [ ] Fur Trader	
+- [ ] Golf	
+- [ ] Gomoko	
+- [ ] Guess	
+- [ ] Gunner	
+- [ ] Hammurabi	
+- [ ] Hangman	
+- [ ] Hello	
+- [ ] Hexapawn	
+- [ ] Hi-Lo	
+- [ ] High I-Q	
+- [ ] Hockey	
+- [ ] Horserace	
+- [ ] Hurkle	
+- [ ] Kinema	
+- [ ] King	
+- [ ] Letter	
+- [ ] Life	
+- [ ] Life For Two
+- [ ] Literature Quiz
+- [ ] Love	
+- [ ] Lunar	
+- [ ] LEM	
+- [ ] Rocket	
+- [ ] Master Mind	
+- [ ] Math Dice	
+- [ ] Mugwump	
+- [ ] Name	
+- [ ] Nicomachus	
+- [ ] Nim	
+- [ ] Number	
+- [ ] One Check	
+- [ ] Orbit	
+- [ ] Pizza	
+- [ ] Poetry	
+- [ ] Poker	
+- [ ] Queen	
+- [ ] Reverse	
+- [ ] Rock, Scissors, Paper
+- [ ] Roulette
+- [ ] Russian Roulette
+- [ ] Salvo	
+- [ ] Sine Wave	
+- [ ] Slalom	
+- [ ] Slots	
+- [ ] Splat	
+- [ ] Stars	
+- [ ] Stock Market
+- [ ] Super Star Trek
+- [ ] Super Star Trek: Instrctions
+- [ ] Synonym	
+- [ ] Target	
+- [ ] 3-D Plot	
+- [ ] 3-D Tic-Tac-Toe
+- [ ] Tic-Tac-Toe 1
+- [ ] Tic-Tac-Toe 2
+- [ ] Tower	
+- [ ] Train	
+- [ ] Trap	
+- [ ] 23 Matches	
+- [ ] War	
+- [ ] Weekday	
+- [ ] Word
