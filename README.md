@@ -10,7 +10,7 @@
 - [ ] Banner	
 - [ ] Basketball	
 - [ ] Batnum	
-- [ ] Battle	
+- [x] Battle	
 - [ ] Blackjack	
 - [ ] Bombardment	
 - [ ] Bombs Away
